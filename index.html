@@ -1,0 +1,627 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Comic+Neue&family=Montserrat&family=Raleway:wght@200&family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+	<link rel="icon" href="./logo.png" type="image/x-icon">
+    <title>Twoja Stara</title>
+</head>
+<body>
+    <div id="container">
+        <div id="tameCounter">
+            <p>
+                You tamed 0 creatures
+            </p>
+        </div>
+        <header><h1>Select tamed dinos</h1></header>
+        <main>
+            <div class="dino_tab" id="achatina" onclick="color(this.id)">
+                <img class="dino_img" src="./Pics/achatina.png" />
+                <figcaption class="dino_name">Achatina</figcaption>
+            </div>
+            <div class="dino_tab" id="allosaurus" onclick="color(this.id)">
+                <img class="dino_img" src="./Pics/allosaurus.png" />
+                <figcaption class="dino_name">Allosaurus</figcaption>
+            </div>
+            <div class="dino_tab" id="amargasaurus" onclick="color(this.id)">
+                <img class="dino_img" src="./Pics/amargasaurus.png" />
+                <figcaption class="dino_name">Amargasaurus</figcaption>
+            </div>
+            <div class="dino_tab" id="andrewsarchus" onclick="color(this.id)">
+                <img class="dino_img" src="./Pics/andrewsarchus.png" />
+                <figcaption class="dino_name">Andrewsarchus</figcaption>
+            </div>
+            <div class="dino_tab" id="angler" onclick="color(this.id)">
+                <img class="dino_img" src="./Pics/angler.png" />
+                <figcaption class="dino_name">Angler</figcaption>
+            </div>
+            <div class="dino_tab" id="ankylosaurus" onclick="color(this.id)">
+                <img class="dino_img" src="./Pics/ankylosaurus.png" />
+                <figcaption class="dino_name">ankylosaurus</figcaption>
+            </div>
+            <div class="dino_tab" id="araneo" onclick="color(this.id)">
+                <img class="dino_img" src="./Pics/araneo.png" />
+                <figcaption class="dino_name">Araneo</figcaption>
+            </div>
+            <div class="dino_tab" id="archaeopteryx" onclick="color(this.id)">
+                <img class="dino_img" src="./Pics/archaeopteryx.png" />
+                <figcaption class="dino_name">Archaeopteryx</figcaption>
+            </div>
+            <div class="dino_tab" id="argentavis" onclick="color(this.id)">
+                <img class="dino_img" src="./Pics/argentavis.png" />
+                <figcaption class="dino_name">Argentavis</figcaption>
+            </div>
+            <div class="dino_tab" id="arthropluera" onclick="color(this.id)">
+                <img class="dino_img" src="./Pics/arthropluera.png" />
+                <figcaption class="dino_name">Arthropluera</figcaption>
+            </div>
+            <div class="dino_tab" id="astrocetus" onclick="color(this.id)">
+                <img class="dino_img" src="./Pics/astrocetus.png" />
+                <figcaption class="dino_name">Astrocetus</figcaption>
+            </div>
+            <div class="dino_tab" id="astrodelphis" onclick="color(this.id)">
+                <img class="dino_img" src="./Pics/astrodelphis.png" />
+                <figcaption class="dino_name">Astrodelphis</figcaption>
+            </div>
+            <div class="dino_tab" id="baryonyx" onclick="color(this.id)">
+                <img class="dino_img" src="./Pics/baryonyx.png" />
+                <figcaption class="dino_name">Baryonyx</figcaption>
+            </div>
+            <div class="dino_tab" id="basilisk" onclick="color(this.id)">
+                <img class="dino_img" src="./Pics/basilisk.png" />
+                <figcaption class="dino_name">Basilisk</figcaption>
+            </div>
+            <div class="dino_tab" id="basilosaurus" onclick="color(this.id)">
+                <img class="dino_img" src="./Pics/basilosaurus.png" />
+                <figcaption class="dino_name">Basilosaurus</figcaption>
+            </div>
+            <div class="dino_tab" id="beelzebufo" onclick="color(this.id)">
+                <img class="dino_img" src="./Pics/beelzebufo.png" />
+                <figcaption class="dino_name">Beelzebufo</figcaption>
+            </div>
+            <div class="dino_tab" id="bloodstalker" onclick="color(this.id)">
+                <img class="dino_img" src="./Pics/bloodstalker.png" />
+                <figcaption class="dino_name">Bloodstalker</figcaption>
+            </div>
+            <div class="dino_tab" id="brontosaurus" onclick="color(this.id)">
+                <img class="dino_img" src="./Pics/brontosaurus.png" />
+                <figcaption class="dino_name">Brontosaurus</figcaption>
+            </div>
+            <div class="dino_tab" id="bulbdog" onclick="color(this.id)">
+                <img class="dino_img" src="./Pics/bulbdog.png" />
+                <figcaption class="dino_name">Bulbdog</figcaption>
+            </div>
+            <div class="dino_tab" id="carbonemys" onclick="color(this.id)">
+                <img class="dino_img" src="./Pics/carbonemys.png" />
+                <figcaption class="dino_name">Carbonemys</figcaption>
+            </div>
+            <div class="dino_tab" id="carnotaurus" onclick="color(this.id)">
+                <img class="dino_img" src="./Pics/carnotaurus.png" />
+                <figcaption class="dino_name">Carnotaurus</figcaption>
+            </div>
+            <div class="dino_tab" id="castoroides" onclick="color(this.id)">
+                <img class="dino_img" src="./Pics/castoroides.png" />
+                <figcaption class="dino_name">Castoroides</figcaption>
+            </div>
+            <div class="dino_tab" id="chalicotherium" onclick="color(this.id)">
+                <img class="dino_img" src="./Pics/chalicotherium.png" />
+                <figcaption class="dino_name">Chalicotherium</figcaption>
+            </div>
+            <div class="dino_tab"   id="coelacanth" onclick="color(this.id)">
+                <img class="dino_img" src="./Pics/coelacanth.png" />
+                <figcaption class="dino_name">Coelacanth</figcaption>
+            </div>
+            <div class="dino_tab" id="compy" onclick="color(this.id)">
+                <img class="dino_img" src="./Pics/compy.png" />
+                <figcaption class="dino_name">Compy</figcaption>
+            </div>
+            <div class="dino_tab" id="crystalwyvern" onclick="color(this.id)">
+                <img class="dino_img" src="./Pics/crystalwyvern.png" />
+                <figcaption class="dino_name">Crystal Wyvern</figcaption>
+            </div>
+            <div class="dino_tab" id="daeodon" onclick="color(this.id)">
+                <img class="dino_img" src="./Pics/daeodon.png" />
+                <figcaption class="dino_name">Daeodon</figcaption>
+            </div>
+            <div class="dino_tab" id="deinonychus" onclick="color(this.id)">
+                <img class="dino_img" src="./Pics/deinonychus.png" />
+                <figcaption class="dino_name">Deinonychus</figcaption>
+            </div>
+            <div class="dino_tab" id="deserttitan" onclick="color(this.id)">
+                <img class="dino_img" src="./Pics/deserttitan.png" />
+                <figcaption class="dino_name">Desert Titan</figcaption>
+            </div>
+            <div class="dino_tab" id="desmodus" onclick="color(this.id)">
+                <img class="dino_img" src="./Pics/desmodus.png" />
+                <figcaption class="dino_name">Desmodus</figcaption>
+            </div>
+            <div class="dino_tab" id="dilophosaur" onclick="color(this.id)">
+                <img class="dino_img" src="./Pics/dilophosaur.png" />
+                <figcaption class="dino_name">Dilophosaur</figcaption>
+            </div>
+            <div class="dino_tab" id="dimetrodon" onclick="color(this.id)">
+                <img class="dino_img" src="./Pics/dimetrodon.png" />
+                <figcaption class="dino_name">Dimetrodon</figcaption>
+            </div>
+            <div class="dino_tab" id="dimorphodon" onclick="color(this.id)">
+                <img class="dino_img" src="./Pics/dimorphodon.png" />
+                <figcaption class="dino_name">Dimorphodon</figcaption>
+            </div>
+            <div class="dino_tab" id="dinopithecus" onclick="color(this.id)">
+                <img class="dino_img" src="./Pics/dinopithecus.png" />
+                <figcaption class="dino_name">Dinopithecus</figcaption>
+            </div>
+            <div class="dino_tab" id="Diplocaulus" onclick="color(this.id)">
+                <img class="dino_img" src="./Pics/diplocaulus.png" />
+                <figcaption class="dino_name">Diplocaulus</figcaption>
+            </div>
+            <div class="dino_tab" id="diplodocus" onclick="color(this.id)">
+                <img class="dino_img" src="./Pics/diplodocus.png" />
+                <figcaption class="dino_name">Diplodocus</figcaption>
+            </div>
+            <div class="dino_tab" id="direbear" onclick="color(this.id)">
+                <img class="dino_img" src="./Pics/direbear.png" />
+                <figcaption class="dino_name">Dire Bear</figcaption>
+            </div>
+            <div class="dino_tab" id="direwolf" onclick="color(this.id)">
+                <img class="dino_img" src="./Pics/direwolf.png" />
+                <figcaption class="dino_name">Dire Wolf</figcaption>
+            </div>
+            <div class="dino_tab" id="dodo" onclick="color(this.id)">
+                <img class="dino_img" src="./Pics/dodo.png" />
+                <figcaption class="dino_name">Dodo</figcaption>
+            </div>
+            <div class="dino_tab" id="doedicurus" onclick="color(this.id)">
+                <img class="dino_img" src="./Pics/doedicurus.png" />
+                <figcaption class="dino_name">Doedicurus</figcaption>
+            </div>
+            <div class="dino_tab" id="dungbeetle" onclick="color(this.id)">
+                <img class="dino_img" src="./Pics/dungbeetle.png" />
+                <figcaption class="dino_name">Dung Beetle</figcaption>
+            </div>
+            <div class="dino_tab" id="dunkleosteus" onclick="color(this.id)">
+                <img class="dino_img" src="./Pics/dunkleosteus.png" />
+                <figcaption class="dino_name">Dunkleosteus</figcaption>
+            </div>
+            <div class="dino_tab" id="electrophorus" onclick="color(this.id)">
+                <img class="dino_img" src="./Pics/electrophorus.png" />
+                <figcaption class="dino_name">Electrophorus</figcaption>
+            </div>
+            <div class="dino_tab" id="enforcer" onclick="color(this.id)">
+                <img class="dino_img" src="./Pics/enforcer.png" />
+                <figcaption class="dino_name">Enforcer</figcaption>
+            </div>
+            <div class="dino_tab" id="equus" onclick="color(this.id)">
+                <img class="dino_img" src="./Pics/equus.png" />
+                <figcaption class="dino_name">Equus</figcaption>
+            </div>
+            <div class="dino_tab" id="featherlight" onclick="color(this.id)">
+                <img class="dino_img" src="./Pics/featherlight.png" />
+                <figcaption class="dino_name">Featherlight</figcaption>
+            </div>
+            <div class="dino_tab" id="fenrir" onclick="color(this.id)">
+                <img class="dino_img" src="./Pics/fenrir.png" />
+                <figcaption class="dino_name">Fenrir</figcaption>
+            </div>
+            <div class="dino_tab" id="ferox" onclick="color(this.id)">
+                <img class="dino_img" src="./Pics/ferox.png" />
+                <figcaption class="dino_name">Ferox</figcaption>
+            </div>
+            <div class="dino_tab" id="fjordhawk" onclick="color(this.id)">
+                <img class="dino_img" src="./Pics/fjordhawk.png" />
+                <figcaption class="dino_name">Fjordhawk</figcaption>
+            </div>
+            <div class="dino_tab" id="foresttitan" onclick="color(this.id)">
+                <img class="dino_img" src="./Pics/foresttitan.png" />
+                <figcaption class="dino_name">Forest Titan</figcaption>
+            </div>
+            <div class="dino_tab" id="gacha" onclick="color(this.id)">
+                <img class="dino_img" src="./Pics/gacha.png" />
+                <figcaption class="dino_name">Gacha</figcaption>
+            </div>
+            <div class="dino_tab" id="gallimimus" onclick="color(this.id)">
+                <img class="dino_img" src="./Pics/gallimimus.png" />
+                <figcaption class="dino_name">Gallimimus</figcaption>
+            </div>
+            <div class="dino_tab" id="gasbags" onclick="color(this.id)">
+                <img class="dino_img" src="./Pics/gasbags.png" />
+                <figcaption class="dino_name">Gasbags</figcaption>
+            </div>
+            <div class="dino_tab" id="giantbee" onclick="color(this.id)">
+                <img class="dino_img" src="./Pics/giantbee.png" />
+                <figcaption class="dino_name">Giant Bee</figcaption>
+            </div>
+            <div class="dino_tab" id="giganotosaurus" onclick="color(this.id)">
+                <img class="dino_img" src="./Pics/giganotosaurus.png" />
+                <figcaption class="dino_name">Giganotosaurus</figcaption>
+            </div>
+            <div class="dino_tab" id="gigantopithecus" onclick="color(this.id)">
+                <img class="dino_img" src="./Pics/gigantopithecus.png" />
+                <figcaption class="dino_name">Gigantopithecus</figcaption>
+            </div>
+            <div class="dino_tab" id="glowtail" onclick="color(this.id)">
+                <img class="dino_img" src="./Pics/glowtail.png" />
+                <figcaption class="dino_name">Glowtail</figcaption>
+            </div>
+            <div class="dino_tab" id="griffin" onclick="color(this.id)">
+                <img class="dino_img" src="./Pics/griffin.png" />
+                <figcaption class="dino_name">Griffin</figcaption>
+            </div>
+            <div class="dino_tab" id="hesperornis" onclick="color(this.id)">
+                <img class="dino_img" src="./Pics/hesperornis.png" />
+                <figcaption class="dino_name">Hesperornis</figcaption>
+            </div>
+            <div class="dino_tab" id="hyaenodon" onclick="color(this.id)">
+                <img class="dino_img" src="./Pics/hyaenodon.png" />
+                <figcaption class="dino_name">Hyaenodon</figcaption>
+            </div>
+            <div class="dino_tab" id="icetitan" onclick="color(this.id)">
+                <img class="dino_img" src="./Pics/icetitan.png" />
+                <figcaption class="dino_name">Ice Titan</figcaption>
+            </div>
+            <div class="dino_tab" id="ichthyornis" onclick="color(this.id)">
+                <img class="dino_img" src="./Pics/ichthyornis.png" />
+                <figcaption class="dino_name">Ichthyornis</figcaption>
+            </div>
+            <div class="dino_tab" id="ichthyosaurus" onclick="color(this.id)">
+                <img class="dino_img" src="./Pics/ichthyosaurus.png" />
+                <figcaption class="dino_name">Ichthyosaurus</figcaption>
+            </div>
+            <div class="dino_tab" id="iguanodon" onclick="color(this.id)">
+                <img class="dino_img" src="./Pics/iguanodon.png" />
+                <figcaption class="dino_name">Iguanodon</figcaption>
+            </div>
+            <div class="dino_tab" id="jerboa" onclick="color(this.id)">
+                <img class="dino_img" src="./Pics/jerboa.png" />
+                <figcaption class="dino_name">Jerboa</figcaption>
+            </div>
+            <div class="dino_tab" id="kairuku" onclick="color(this.id)">
+                <img class="dino_img" src="./Pics/kairuku.png" />
+                <figcaption class="dino_name">Kairuku</figcaption>
+            </div>
+            <div class="dino_tab" id="kaprosuchus" onclick="color(this.id)">
+                <img class="dino_img" src="./Pics/kaprosuchus.png" />
+                <figcaption class="dino_name">Kaprosuchus</figcaption>
+            </div>
+            <div class="dino_tab" id="karkinos" onclick="color(this.id)">
+                <img class="dino_img" src="./Pics/karkinos.png" />
+                <figcaption class="dino_name">Karkinos</figcaption>
+            </div>
+            <div class="dino_tab" id="kentrosaurus" onclick="color(this.id)">
+                <img class="dino_img" src="./Pics/kentrosaurus.png" />
+                <figcaption class="dino_name">Kentrosaurus</figcaption>
+            </div>
+            <div class="dino_tab" id="lamprey" onclick="color(this.id)">
+                <img class="dino_img" src="./Pics/lamprey.png" />
+                <figcaption class="dino_name">Lamprey</figcaption>
+            </div>
+            <div class="dino_tab" id="leech" onclick="color(this.id)">
+                <img class="dino_img" src="./Pics/leech.png" />
+                <figcaption class="dino_name">Leech</figcaption>
+            </div>
+            <div class="dino_tab" id="liopleurodon" onclick="color(this.id)">
+                <img class="dino_img" src="./Pics/liopleurodon.png" />
+                <figcaption class="dino_name">Liopleurodon</figcaption>
+            </div>
+            <div class="dino_tab" id="lymantria" onclick="color(this.id)">
+                <img class="dino_img" src="./Pics/lymantria.png" />
+                <figcaption class="dino_name">Lymantria</figcaption>
+            </div>
+            <div class="dino_tab" id="lystrosaurus" onclick="color(this.id)">
+                <img class="dino_img" src="./Pics/lystrosaurus.png" />
+                <figcaption class="dino_name">Lystrosaurus</figcaption>
+            </div>
+            <div class="dino_tab" id="maewing" onclick="color(this.id)">
+                <img class="dino_img" src="./Pics/maewing.png" />
+                <figcaption class="dino_name">Maewing</figcaption>
+            </div>
+            <div class="dino_tab" id="magmasaur" onclick="color(this.id)">
+                <img class="dino_img" src="./Pics/magmasaur.png" />
+                <figcaption class="dino_name">Magmasaur</figcaption>
+            </div>
+            <div class="dino_tab" id="mammoth" onclick="color(this.id)">
+                <img class="dino_img" src="./Pics/mammoth.png" />
+                <figcaption class="dino_name">Mammoth</figcaption>
+            </div>
+            <div class="dino_tab" id="managarmr" onclick="color(this.id)">
+                <img class="dino_img" src="./Pics/managarmr.png" />
+                <figcaption class="dino_name">Managarmr</figcaption>
+            </div>
+            <div class="dino_tab" id="manta" onclick="color(this.id)">
+                <img class="dino_img" src="./Pics/manta.png" />
+                <figcaption class="dino_name">Manta</figcaption>
+            </div>
+            <div class="dino_tab" id="mantis" onclick="color(this.id)">
+                <img class="dino_img" src="./Pics/mantis.png" />
+                <figcaption class="dino_name">Mantis</figcaption>
+            </div>
+            <div class="dino_tab" id="megachelon" onclick="color(this.id)">
+                <img class="dino_img" src="./Pics/megachelon.png" />
+                <figcaption class="dino_name">Megachelon</figcaption>
+            </div>
+            <div class="dino_tab" id="megalania" onclick="color(this.id)">
+                <img class="dino_img" src="./Pics/megalania.png" />
+                <figcaption class="dino_name">Megalania</figcaption>
+            </div>
+            <div class="dino_tab" id="megaloceros" onclick="color(this.id)">
+                <img class="dino_img" src="./Pics/megaloceros.png" />
+                <figcaption class="dino_name">Megaloceros</figcaption>
+            </div>
+            <div class="dino_tab" id="megalodon" onclick="color(this.id)">
+                <img class="dino_img" src="./Pics/megalodon.png" />
+                <figcaption class="dino_name">Megalodon</figcaption>
+            </div>
+            <div class="dino_tab" id="megalosaurus" onclick="color(this.id)">
+                <img class="dino_img" src="./Pics/megalosaurus.png" />
+                <figcaption class="dino_name">Megalosaurus</figcaption>
+            </div>
+            <div class="dino_tab" id="megatherium" onclick="color(this.id)">
+                <img class="dino_img" src="./Pics/megatherium.png" />
+                <figcaption class="dino_name">Megatherium</figcaption>
+            </div>
+            <div class="dino_tab" id="mesopithecus" onclick="color(this.id)">
+                <img class="dino_img" src="./Pics/mesopithecus.png" />
+                <figcaption class="dino_name">Mesopithecus</figcaption>
+            </div>
+            <div class="dino_tab" id="microraptor" onclick="color(this.id)">
+                <img class="dino_img" src="./Pics/microraptor.png" />
+                <figcaption class="dino_name">Microraptor</figcaption>
+            </div>
+            <div class="dino_tab" id="morellatops" onclick="color(this.id)">
+                <img class="dino_img" src="./Pics/morellatops.png" />
+                <figcaption class="dino_name">Morellatops</figcaption>
+            </div>
+            <div class="dino_tab" id="mososaurus" onclick="color(this.id)">
+                <img class="dino_img" src="./Pics/mosasaurus.png" />
+                <figcaption class="dino_name">Mososaurus</figcaption>
+            </div>
+            <div class="dino_tab" id="moschops" onclick="color(this.id)">
+                <img class="dino_img" src="./Pics/moschops.png" />
+                <figcaption class="dino_name">Moschops</figcaption>
+            </div>
+            <div class="dino_tab" id="noglin" onclick="color(this.id)">
+                <img class="dino_img" src="./Pics/noglin.png" />
+                <figcaption class="dino_name">Noglin</figcaption>
+            </div>
+            <div class="dino_tab" id="onyc" onclick="color(this.id)">
+                <img class="dino_img" src="./Pics/onyc.png" />
+                <figcaption class="dino_name">Onyc</figcaption>
+            </div>
+            <div class="dino_tab" id="otter" onclick="color(this.id)">
+                <img class="dino_img" src="./Pics/otter.png" />
+                <figcaption class="dino_name">Otter</figcaption>
+            </div>
+            <div class="dino_tab" id="oviraptor" onclick="color(this.id)">
+                <img class="dino_img" src="./Pics/oviraptor.png" />
+                <figcaption class="dino_name">Oviraptor</figcaption>
+            </div>
+            <div class="dino_tab" id="ovis" onclick="color(this.id)">
+                <img class="dino_img" src="./Pics/ovis.png" />
+                <figcaption class="dino_name">Ovis</figcaption>
+            </div>
+            <div class="dino_tab" id="pachy" onclick="color(this.id)">
+                <img class="dino_img" src="./Pics/pachy.png" />
+                <figcaption class="dino_name">Pachy</figcaption>
+            </div>
+            <div class="dino_tab" id="pachyrhinosaurus" onclick="color(this.id)">
+                <img class="dino_img" src="./Pics/pachyrhinosaurus.png" />
+                <figcaption class="dino_name">Pachyrhinosaurus</figcaption>
+            </div>
+            <div class="dino_tab" id=" paracer" onclick="color(this.id)">
+                <img class="dino_img" src="./Pics/paracer.png" />
+                <figcaption class="dino_name">Paracer</figcaption>
+            </div>
+            <div class="dino_tab" id="parasaur" onclick="color(this.id)">
+                <img class="dino_img" src="./Pics/parasaur.png" />
+                <figcaption class="dino_name">Parasaur</figcaption>
+            </div>
+            <div class="dino_tab" id="pegomastax" onclick="color(this.id)">
+                <img class="dino_img" src="./Pics/pegomastax.png" />
+                <figcaption class="dino_name">Pegomastax</figcaption>
+            </div>
+            <div class="dino_tab" id="pelagornis" onclick="color(this.id)">
+                <img class="dino_img" src="./Pics/pelagornis.png" />
+                <figcaption class="dino_name">Pelagornis</figcaption>
+            </div>
+            <div class="dino_tab" id="phiomia" onclick="color(this.id)">
+                <img class="dino_img" src="./Pics/phiomia.png" />
+                <figcaption class="dino_name">Phiomia</figcaption>
+            </div>
+            <div class="dino_tab" id="phoenix" onclick="color(this.id)">
+                <img class="dino_img" src="./Pics/phoenix.png" />
+                <figcaption class="dino_name">Phoenix</figcaption>
+            </div>
+            <div class="dino_tab" id="piranha" onclick="color(this.id)">
+                <img class="dino_img" src="./Pics/piranha.png" />
+                <figcaption class="dino_name">Piranha</figcaption>
+            </div>
+            <div class="dino_tab" id="plesiosaur" onclick="color(this.id)">
+                <img class="dino_img" src="./Pics/plesiosaur.png" />
+                <figcaption class="dino_name">Plesiosaur</figcaption>
+            </div>
+            <div class="dino_tab" id="procoptodon" onclick="color(this.id)">
+                <img class="dino_img" src="./Pics/procoptodon.png" />
+                <figcaption class="dino_name">Procoptodon</figcaption>
+            </div>
+            <div class="dino_tab" id="pteranodon" onclick="color(this.id)">
+                <img class="dino_img" src="./Pics/pteranodon.png" />
+                <figcaption class="dino_name">Pteranodon</figcaption>
+            </div>
+            <div class="dino_tab" id="pulmonoscorpius" onclick="color(this.id)">
+                <img class="dino_img" src="./Pics/pulmonoscorpius.png" />
+                <figcaption class="dino_name">Pulmonoscorpius</figcaption>
+            </div>
+            <div class="dino_tab" id="purlovia" onclick="color(this.id)">
+                <img class="dino_img" src="./Pics/purlovia.png" />
+                <figcaption class="dino_name">Purlovia</figcaption>
+            </div>
+            <div class="dino_tab" id="quetzal" onclick="color(this.id)">
+                <img class="dino_img" src="./Pics/quetzal.png" />
+                <figcaption class="dino_name">Quetzal</figcaption>
+            </div>
+            <div class="dino_tab" id="raptor" onclick="color(this.id)">
+                <img class="dino_img" src="./Pics/raptor.png" />
+                <figcaption class="dino_name">Raptor</figcaption>
+            </div>
+            <div class="dino_tab" id="ravager" onclick="color(this.id)">
+                <img class="dino_img" src="./Pics/ravager.png" />
+                <figcaption class="dino_name">Ravager</figcaption>
+            </div>
+            <div class="dino_tab" id="reaper" onclick="color(this.id)">
+                <img class="dino_img" src="./Pics/reaper.png" />
+                <figcaption class="dino_name">Reaper</figcaption>
+            </div>
+            <div class="dino_tab" id="rex" onclick="color(this.id)">
+                <img class="dino_img" src="./Pics/rex.png" />
+                <figcaption class="dino_name">Rex</figcaption>
+            </div>
+            <div class="dino_tab" id="rockdrake" onclick="color(this.id)">
+                <img class="dino_img" src="./Pics/rockdrake.png" />
+                <figcaption class="dino_name">Rock Drake</figcaption>
+            </div>
+            <div class="dino_tab" id="rockelemental" onclick="color(this.id)">
+                <img class="dino_img" src="./Pics/rockelemental.png" />
+                <figcaption class="dino_name">Rock Elemental</figcaption>
+            </div>
+            <div class="dino_tab" id="rollrat" onclick="color(this.id)">
+                <img class="dino_img" src="./Pics/rollrat.png" />
+                <figcaption class="dino_name">roll Rat</figcaption>
+            </div>
+            <div class="dino_tab" id="royalgriffin" onclick="color(this.id)">
+                <img class="dino_img" src="./Pics/royalgriffin.png" />
+                <figcaption class="dino_name">Royal Griffin</figcaption>
+            </div>
+            <div class="dino_tab" id="sabertooth" onclick="color(this.id)">
+                <img class="dino_img" src="./Pics/sabertooth.png" />
+                <figcaption class="dino_name">Sabertooth</figcaption>
+            </div>
+            <div class="dino_tab" id="sabertoothsalmon" onclick="color(this.id)">
+                <img class="dino_img" src="./Pics/sabertoothsalmon.png" />
+                <figcaption class="dino_name">Sabertooth Salmon</figcaption>
+            </div>
+            <div class="dino_tab" id="sarco" onclick="color(this.id)">
+                <img class="dino_img" src="./Pics/sarco.png" />
+                <figcaption class="dino_name">Sarco</figcaption>
+            </div>
+            <div class="dino_tab" id="shadowmane" onclick="color(this.id)">
+                <img class="dino_img" src="./Pics/shadowmane.png" />
+                <figcaption class="dino_name">Shadowmane</figcaption>
+            </div>
+            <div class="dino_tab" id="shinehorn" onclick="color(this.id)">
+                <img class="dino_img" src="./Pics/shinehorn.png" />
+                <figcaption class="dino_name">Shinehorn</figcaption>
+            </div>
+            <div class="dino_tab" id="sinomacrops" onclick="color(this.id)">
+                <img class="dino_img" src="./Pics/sinomacrops.png" />
+                <figcaption class="dino_name">Sinomacrops</figcaption>
+            </div>
+            <div class="dino_tab" id="snowowl" onclick="color(this.id)">
+                <img class="dino_img" src="./Pics/snowowl.png" />
+                <figcaption class="dino_name">Snow Owl</figcaption>
+            </div>
+            <div class="dino_tab" id="spinosaur" onclick="color(this.id)">
+                <img class="dino_img" src="./Pics/spinosaur.png" />
+                <figcaption class="dino_name">Spinosaur</figcaption>
+            </div>
+            <div class="dino_tab" id="stegosaurus" onclick="color(this.id)">
+                <img class="dino_img" src="./Pics/stegosaurus.png" />
+                <figcaption class="dino_name">Stegosaurus</figcaption>
+            </div>
+            <div class="dino_tab" id="stryder" onclick="color(this.id)">
+                <img class="dino_img" src="./Pics/stryder.png" />
+                <figcaption class="dino_name">Stryder</figcaption>
+            </div>
+            <div class="dino_tab" id="tapejara" onclick="color(this.id)">
+                <img class="dino_img" src="./Pics/tapejara.png" />
+                <figcaption class="dino_name">Tapejara</figcaption>
+            </div>
+            <div class="dino_tab" id="terrorbird" onclick="color(this.id)">
+                <img class="dino_img" src="./Pics/terrorbird.png" />
+                <figcaption class="dino_name">Terror Bird</figcaption>
+            </div>
+            <div class="dino_tab" id="therizinosaurus" onclick="color(this.id)">
+                <img class="dino_img" src="./Pics/therizinosaurus.png" />
+                <figcaption class="dino_name">Therizinosaurus</figcaption>
+            </div>
+            <div class="dino_tab" id="thornydragon" onclick="color(this.id)">
+                <img class="dino_img" src="./Pics/thornydragon.png" />
+                <figcaption class="dino_name">Thorny Dragon</figcaption>
+            </div>
+            <div class="dino_tab" id="thylacoleo" onclick="color(this.id)">
+                <img class="dino_img" src="./Pics/thylacoleo.png" />
+                <figcaption class="dino_name">Thylacoleo</figcaption>
+            </div>
+            <div class="dino_tab" id="titanoboa" onclick="color(this.id)">
+                <img class="dino_img" src="./Pics/titanoboa.png" />
+                <figcaption class="dino_name">Titanoboa</figcaption>
+            </div>
+            <div class="dino_tab" id="titanosaur" onclick="color(this.id)">
+                <img class="dino_img" src="./Pics/titanosaur.png" />
+                <figcaption class="dino_name">Titanosaur</figcaption>
+            </div>
+            <div class="dino_tab" id="triceratops" onclick="color(this.id)">
+                <img class="dino_img" src="./Pics/triceratops.png" />
+                <figcaption class="dino_name">Triceratops</figcaption>
+            </div>
+            <div class="dino_tab" id="trilobite" onclick="color(this.id)">
+                <img class="dino_img" src="./Pics/trilobite.png" />
+                <figcaption class="dino_name">Trilobite</figcaption>
+            </div>
+            <div class="dino_tab" id="troodon" onclick="color(this.id)">
+                <img class="dino_img" src="./Pics/troodon.png" />
+                <figcaption class="dino_name">Troodon</figcaption>
+            </div>
+            <div class="dino_tab" id="tropeognathus" onclick="color(this.id)">
+                <img class="dino_img" src="./Pics/tropeognathus.png" />
+                <figcaption class="dino_name">Tropeognathus</figcaption>
+            </div>
+            <div class="dino_tab" id="tusoteuthis" onclick="color(this.id)">
+                <img class="dino_img" src="./Pics/tusoteuthis.png" />
+                <figcaption class="dino_name">Tusoteuthis</figcaption>
+            </div>
+            <div class="dino_tab" id="unicorn" onclick="color(this.id)">
+                <img class="dino_img" src="./Pics/unicorn.png" />
+                <figcaption class="dino_name">Unicorn</figcaption>
+            </div>
+            <div class="dino_tab" id="Velonasaur" onclick="color(this.id)">
+                <img class="dino_img" src="./Pics/Velonasaur.png" />
+                <figcaption class="dino_name">Velonasaur</figcaption>
+            </div>
+            <div class="dino_tab" id="voidwyrm" onclick="color(this.id)">
+                <img class="dino_img" src="./Pics/voidwyrm.png" />
+                <figcaption class="dino_name">Voidwyrm</figcaption>
+            </div>
+            <div class="dino_tab" id="vulture" onclick="color(this.id)">
+                <img class="dino_img" src="./Pics/vulture.png" />
+                <figcaption class="dino_name">Vulture</figcaption>
+            </div>
+            <div class="dino_tab" id="woollyrhino" onclick="color(this.id)">
+                <img class="dino_img" src="./Pics/woollyrhino.png" />
+                <figcaption class="dino_name">Wooly Rhino</figcaption>
+            </div>
+            <div class="dino_tab" id="wyvern" onclick="color(this.id)">
+                <img class="dino_img" src="./Pics/wyvern.png" />
+                <figcaption class="dino_name">Wyvern</figcaption>
+            </div>
+            <div class="dino_tab" id="yutyrannus" onclick="color(this.id)">
+                <img class="dino_img" src="./Pics/yutyrannus.png" />
+                <figcaption class="dino_name">Yutyrannus</figcaption>
+            </div>
+        </main>
+        <div id="reset" onclick="reset()">
+            <p>Reset progress</p>
+        </div>
+        <footer>
+            <p>
+                Photos from <a href="https://www.dododex.com/dinosaurs" target="_blank">Dododex</a>
+            </p>
+        </footer>
+    </div>
+</body>
+<script src="script.js"></script>
+</html>
